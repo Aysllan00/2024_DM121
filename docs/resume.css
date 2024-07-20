@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin-top: 30px; /* To avoid content being hidden under the fixed header */
+}
+
+.profile {
+    width: 15%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile h2, .profile p {
+    text-align: center;
+}
+
+.profile p {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: #e9f5ff; /* Light blue background */
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+.profile p span:first-child {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.linkedin {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.linkedin img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.linkedin img:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    margin: 10px 0;
+}
+
+.progress-bar label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+    color: #555; /* Gray text color */
+}
+
+.skills, .projects, .contact, .experience, .education {
+    margin-bottom: 40px;
+}
+
+.skills h2, .projects h2, .contact h2, .experience h2, .education h2 {
+    color: #007bff; /* Blue color for main section titles */
+    margin-bottom: 20px;
+}
+
+.projects .project h3 {
+    color: #000; /* Black color for project titles */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.skill-card img {
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    margin: 10px 0;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.projects .project img {
+    display: block;
+    margin: 0 auto; /* Center image */
+    width: 60%; /* Set image width */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    border-radius: 5px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input, .contact form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
